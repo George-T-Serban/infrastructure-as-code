@@ -30,7 +30,7 @@ resource "aws_instance" "rhel8_ec2" {
   key_name               = "my_key_name"
   vpc_security_group_ids = [aws_security_group.ssh-sg.id]
   iam_instance_profile   = "my-role"
-  user_data              = file("rh_ssmagent")
+  user_data              = file("rh_ssmagent.sh")
   tags = {
     Name          = "Rhel8-server-${count.index + 1}"
     "Patch Group" = "Production"
