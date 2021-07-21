@@ -1,2 +1,2 @@
 # Infrastructure-as-Code
-Mange cloud infrastructure using Terraform.
+Manage cloud infrastructure using Terraform.
