@@ -122,7 +122,7 @@ data "aws_ami" "amazon-linux-2" {
   owners = ["amazon"]
 }
 
-# 10. Create amazon-linux-2 server and install/enable apache2 using Ansible
+# 10. Create amazon-linux-2 server and install/enable apache2.
 resource "aws_instance" "web-server" {
   ami               = data.aws_ami.amazon-linux-2.id
   instance_type     = "t2.micro"
