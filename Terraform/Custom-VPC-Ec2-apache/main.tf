@@ -157,9 +157,6 @@ data "aws_instance" "web-server" {
   }
 }
 
-output "user_data_output" {
-  value = aws_instance.web-server.user_data_base64
-}
 
 
 
