@@ -147,15 +147,6 @@ resource "aws_instance" "web-server" {
   }
 }
 
-# 11. Return user_data
-data "aws_instance" "web-server" {
-  get_user_data = true
-
-  filter {
-    name   = "tag:Name"
-    values = ["apache-server"]
-  }
-}
 
 
 
