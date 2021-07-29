@@ -1,7 +1,7 @@
 # Ansible dynamic inventory
   Basic inventory setup:
 * Install AWS boto3 library: `sudo pip3 install boto3`.
-* Create the dynamic inventory file `aws_ec2.yaml (name is mandatory)` in project's directory.
+* Create the dynamic inventory file `aws_ec2.yaml (aws_ec2.yaml extension is mandatory)` in project's directory.
 * Edit /etc/ansible/ansible.cfg:          
 	 ```
 	 [inventory]   
