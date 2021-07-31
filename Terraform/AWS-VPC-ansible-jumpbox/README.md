@@ -1,6 +1,6 @@
 Deploys a custom VPC and enables outgoing internet access for private instances in order to be
 provisioned using an Ansible jumpbox.
-==============
+-------------
 
 Resources created:
 * Custom VPC.
