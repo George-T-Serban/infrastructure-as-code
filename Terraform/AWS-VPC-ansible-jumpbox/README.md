@@ -6,16 +6,16 @@ Resources created:
 * Custom VPC.
 * Private subnet. 
 * Public subnet.
-* Internet Gateway - attached to the VPC, provides internet access
-* Elastic IP address - attached to the NAT Gateway
-* Public NAT Gateway - attached to the public subnet, routes traffic to the Internet Gateway
-* Public route table.
-* Private route table.
-* Route tables associations.
+* Internet Gateway - attached to the VPC, provides internet access.
+* Elastic IP address - attached to the NAT Gateway.
+* Public NAT Gateway - attached to the public subnet, routes traffic to the Internet Gateway.
+* Public route table - attached to the Internet Gateway.
+* Private route table - attached to the NAT Gateway.
+* Route tables associations - associate the public subnet with the public route table and the private subnet with the private route table.
 * Security group for private instances: allow SSH only.
 * Security group for the public instance (jumpbox): allow SSH from MY_IP_ADDRESS only.
 * Two amazon-linux-2 Ec2 instances in the private subnet with tags "Env = prod", "Env = dev".
-* One amazon-linux-2 Ec2 instance (jumpbox) in the public subnet.
+* One amazon-linux-2 Ec2 instance (jumpbox) in the public subnet with tag "Name = ansible-jumpbox".
 
 Copies Ansible project files to the jumpbox instance:
 * `ansible.cfg` - main Ansible configuration file
