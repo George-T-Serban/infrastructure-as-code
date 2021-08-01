@@ -1,4 +1,4 @@
-# AWS-Systems-Manager Template
+### AWS-Systems-Manager Template
 * Creates six EC2 instances and registers with AWS Systems Manager to enable the ssm-agent for more secure connectivity and patching.
 
 * `vars.tf` - Define variables.
